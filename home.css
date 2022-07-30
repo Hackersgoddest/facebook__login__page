@@ -1,0 +1,219 @@
+html{
+    font-size: 12px;
+}
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+#app{
+    width: 100vw;
+    height: 100vh;
+    background: aliceblue;
+}
+.main-con{
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* margin: auto; */
+    height: 100%;
+}
+.left-con{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.left-con img{
+    /* width: 310px; */
+    max-width: 310px;
+}
+.fb-des{
+    font-size: 20px;
+    font-weight: 500;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+.mid-con{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    /* margin: auto; */
+    align-items: center;
+}
+.right-con{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 80%;
+    /* margin: auto; */
+    height: 400px;
+    padding: 25px 25px 0px 25px;
+    border-radius: 10px;
+    border: transparent;
+    background: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+input{
+    font-size: 18px;
+    height: 50px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding-left: 20px;
+}
+
+input:focus{
+    outline: 1px solid grey;
+}
+
+.first__link{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.first-btn{
+    border-radius: 10px;
+    height: 50px;
+    background: #1877f2;
+    color: #ffffff;
+    font-size: large;
+    border: transparent;
+}
+.right-con hr{
+    margin: 0 25px 25px 25px;
+}
+.second-btn{
+    border-radius: 10px;
+    height: 50px;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    margin-top: 0;
+    /* width: 50%; */
+    background: #47B72A;
+    color: #ffffff;
+    font-size: large;
+    border: transparent;
+}
+.second__link{
+    width: 95%;
+    text-align: center;
+    font-size: 15px;
+} 
+a{
+    text-decoration: none;
+    font-size: 17px;
+    padding: 18px;
+    /* padding-left: 0; */
+    /* font-weight: bold; */
+    color: #222;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: -webkit-link;
+}
+
+.second__link a{
+    padding: 0;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 350px) {
+    .left-con img{
+        height: 80px;
+    }
+
+    .fb-des{
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .mid-con{
+        width: 90%;
+        margin: auto;
+    }
+
+    .right-con{
+        padding-top: 0;
+    }
+
+    a{
+        font-size: 15px;
+    }
+
+    input{
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .first-btn, .second-btn{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+    .left-con{
+        width: 400px;
+    }
+    
+    .mid-con{
+        width: 400px;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 601px){
+    .main-con{
+        order: 5;
+    }
+
+    .left-con{
+        width: 50%;
+        order: 0;
+    }
+
+    .mid-con{
+        width: 50%;
+        order: 1;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 646px) {
+   .fb-des{
+    text-align: left;
+   } 
+}
+
+@media only screen and (min-width: 800px) {
+    .main-con{
+        width: 800px;
+        margin: auto;
+    }
+    
+    .left-con{
+        width: 400px;
+    }
+
+    .left-con img{
+        max-width: 370px;
+    }
+
+    .mid-con{
+        width: 400px;
+        margin: auto;
+    }
+}
+
+
